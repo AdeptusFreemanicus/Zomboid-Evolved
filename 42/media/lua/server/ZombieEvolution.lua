@@ -64,6 +64,22 @@ if not options then return end
                                             options:toLua()
                                             end
 
+                                            -- A function to run as the world initilizes and before zombies are placed to disable zombies from spawning
+                                            local function onInitWorld()
+                                                local dayZeroPurge = true
+                                                if SandboxVars and SandboxVars.ZomboidEvolved and SandboxVars.ZomboidEvolved.EnableDayZeroPurge ~= nil then
+                                                    dayZeroPurge = SandboxVars.ZomboidEvolved.EnableDayZeroPurge
+                                                end
+
+                                                if dayZeroPurge then
+                                                    setOption("ZombieConfig.PopulationStartMultiplier", 0.0)
+                                                    local options = getSandboxOptions()
+                                                    options:applySettings()
+                                                    options:toLua()
+                                                    print("[ZomboidEvolved] World Init: Set Population Start Multiplier to 0")
+                                                end
+                                            end
+
                                             -- Function to get the time and update zombie evolution
                                             function ZomboidEvolved.updateZombies()
                                             local gameTime = getGameTime()
@@ -146,3 +162,4 @@ if not options then return end
                                                                                                         -- Update on new day or game start
                                                                                                         Events.EveryDays.Add(ZomboidEvolved.updateZombies)
                                                                                                         Events.OnGameStart.Add(ZomboidEvolved.updateZombies)
+                                                                                                        Events.onInitWorld.Add(onInitWorld)
