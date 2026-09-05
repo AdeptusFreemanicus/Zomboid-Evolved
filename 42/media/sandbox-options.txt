@@ -1,0 +1,57 @@
+VERSION = 1,
+
+option ZomboidEvolved.ShowStageMessages
+{
+    type = boolean,
+    default = true,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_ShowStageMessages,
+}
+
+option ZomboidEvolved.EnableDayZeroPurge
+{
+    type = boolean,
+    default = true,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_EnableDayZeroPurge,
+}
+
+option ZomboidEvolved.FastShamblerDay
+{
+    type = integer,
+    min = 1,
+    max = 365,
+    default = 15,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_FastShamblerDay,
+}
+
+option ZomboidEvolved.SmartZombieDay
+{
+    type = integer,
+    min = 1,
+    max = 365,
+    default = 30,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_SmartZombieDay,
+}
+
+option ZomboidEvolved.SprinterDay
+{
+    type = integer,
+    min = 1,
+    max = 365,
+    default = 45,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_SprinterDay,
+}
+
+option ZomboidEvolved.MaxPopulation
+{
+    type = double,
+    min = 0,
+    max = 4.0,
+    default = 2.0,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_MaxPopulation,
+}
