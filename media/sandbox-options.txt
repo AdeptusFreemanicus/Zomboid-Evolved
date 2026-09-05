@@ -26,14 +26,14 @@ option ZomboidEvolved.FastShamblerDay
     translation = ZomboidEvolved_FastShamblerDay,
 }
 
-option ZomboidEvolved.SmartZombieDay
+option ZomboidEvolved.SmartShamblerDay
 {
     type = integer,
     min = 1,
     max = 365,
     default = 30,
     page = ZomboidEvolved,
-    translation = ZomboidEvolved_SmartZombieDay,
+    translation = ZomboidEvolved_SmartShamblerDay,
 }
 
 option ZomboidEvolved.SprinterDay

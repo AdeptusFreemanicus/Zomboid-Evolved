@@ -75,7 +75,7 @@ if not options then return end
                                                 -- Fallback/Default values, only if none are defined, can prevent crashes
                                                 local dayZeroPurge = true
                                                 local fastShamblerDay = 15
-                                                local smartZombieDay = 30
+                                                local smartShamblerDay = 30
                                                 local sprinterDay = 45
                                                 local maxPop = 2.0
 
@@ -85,7 +85,7 @@ if not options then return end
                                                     if zVars.ShowStageMessages ~= nil then showMessages = zVars.ShowStageMessages end
                                                         if zVars.EnableDayZeroPurge ~= nil then dayZeroPurge = zVars.EnableDayZeroPurge end
                                                             if zVars.FastShamblerDay then fastShamblerDay = zVars.FastShamblerDay end
-                                                                if zVars.SmartZombieDay then smartZombieDay = zVars.SmartZombieDay end
+                                                                if zVars.SmartZombieDay then smartShamblerDay = zVars.SmartZombieDay end
                                                                     if zVars.SprinterDay then sprinterDay = zVars.SprinterDay end
                                                                         if zVars.MaxPopulation then maxPop = zVars.MaxPopulation end
                                                                             end
@@ -111,14 +111,14 @@ if not options then return end
                                                                                     print("[ZomboidEvolved] Evolution 1: Weaklings, they are weak")
 
                                                                                     -- Evolution 2: Fledlegings (Spelled wrong, sorry)
-                                                                                    elseif days >= fastShamblerDay and days < smartZombieDay then
+                                                                                    elseif days >= fastShamblerDay and days < smartShamblerDay then
                                                                                         currentStage = 2
                                                                                         stageMessage = "I feel like the infected are moving faster now, or am I seeing things?"
                                                                                         applySettings(dayZeroPurge, 1.0, 2, 2, 2, 2, 2, 2)
                                                                                         print("[ZomboidEvolved] Evolution 2: Fleglengis, faster now")
 
                                                                                         -- Evolution 3: Smartones
-                                                                                        elseif days >= smartZombieDay and days < sprinterDay then
+                                                                                        elseif days >= smartShamblerDay and days < sprinterDay then
                                                                                             currentStage = 3
                                                                                             stageMessage = "Are they even stronger now? I swear some of these doors were closed..."
                                                                                             applySettings(dayZeroPurge, math.max(1.0, maxpPop * 0.75), 2, 1, 1, 1, 1, 1)
