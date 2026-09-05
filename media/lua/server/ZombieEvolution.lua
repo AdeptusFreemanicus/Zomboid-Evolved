@@ -16,9 +16,9 @@ if not options then return end
             -- Function to clear zombies to enforce multiplation setting, only for active area in Day 0
             local function clearLoadedZombies()
             local cell = getCell()
-            if not Cell then return end
+            if not cell then return end
 
-                local zombiesList = cell:getZombieList()
+                local zombieList = cell:getZombieList()
                 if not zombieList then return end
 
                     local count = zombieList:size()
@@ -43,7 +43,7 @@ if not options then return end
                                         end
                                         end
                                         -- Apply lore and zombie population settings, this will require enabling zombie respawn, not active if purge is off
-                                        local function applySettings(popMultiplier, speed, strength, toughness, cognition, hearing, sight)
+                                        local function applySettings(modifyPop, popMultiplier, speed, strength, toughness, cognition, hearing, sight)
                                         if modifyPop then
                                             setOption("ZombieConfig.PopulationMultiplier",popMultiplier)
                                             setOption("ZombieConfig.RespawnHours", 16.0)
@@ -52,12 +52,12 @@ if not options then return end
                                             end
 
                                             -- Zombie Lore evolution
-                                            setOption("ZombieLore.Speed" speed)
-                                            setOption("ZombieLore.Strength" strength)
-                                            setOption("ZombieLore.Toughness" tougness)
-                                            setOption("ZombieLore.Cognition" cognition)
-                                            setOption("ZombieLore.Hearing" hearing)
-                                            setOption("ZombieLore.Sight" sight)
+                                            setOption("ZombieLore.Speed", speed)
+                                            setOption("ZombieLore.Strength", strength)
+                                            setOption("ZombieLore.Toughness", tougness)
+                                            setOption("ZombieLore.Cognition", cognition)
+                                            setOption("ZombieLore.Hearing", hearing)
+                                            setOption("ZombieLore.Sight", sight)
 
                                             local options = getSandboxOptions()
                                             options:applySettings()
@@ -66,7 +66,7 @@ if not options then return end
 
                                             -- Function to get the time and update zombie evolution
                                             function ZomboidEvolved.updateZombies()
-                                            local gameTime = getGameTime()1
+                                            local gameTime = getGameTime()
                                             if not gameTime then return end
                                                 -- World time in hours divided by 24 to get days
                                                 local worldHours = gameTime:getWorldAgeHours()
@@ -74,6 +74,7 @@ if not options then return end
 
                                                 -- Fallback/Default values, only if none are defined, can prevent crashes
                                                 local dayZeroPurge = true
+                                                local showMessages = true
                                                 local fastShamblerDay = 15
                                                 local smartShamblerDay = 30
                                                 local sprinterDay = 45
@@ -121,14 +122,14 @@ if not options then return end
                                                                                         elseif days >= smartShamblerDay and days < sprinterDay then
                                                                                             currentStage = 3
                                                                                             stageMessage = "Are they even stronger now? I swear some of these doors were closed..."
-                                                                                            applySettings(dayZeroPurge, math.max(1.0, maxpPop * 0.75), 2, 1, 1, 1, 1, 1)
+                                                                                            applySettings(dayZeroPurge, math.max(1.0, maxPop * 0.75), 2, 1, 1, 1, 1, 1)
                                                                                             print("[ZomboidEvolved] Evolution 3: Smartones, they can open doors now")
 
                                                                                             -- Evolution 4: Death
                                                                                             else
                                                                                                 currentStage = 4
                                                                                                 stageMessage = "is that infected running? IT'S RUNNING!!"
-                                                                                                applySettings(dayZeroPurge, mapPop, 1, 1, 1, 1, 1)
+                                                                                                applySettings(dayZeroPurge, maxPop, 1, 1, 1, 1, 1)
                                                                                                 end
 
                                                                                                 -- Check if evolution has changed since last time

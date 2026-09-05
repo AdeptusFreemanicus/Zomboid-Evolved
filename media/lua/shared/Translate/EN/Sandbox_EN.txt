@@ -1,5 +1,5 @@
 Sandbox_EN = {
-	Sandbox_ZomboidEvolved = "Other Mods",
+	Sandbox_ZomboidEvolved = "Zomboid Evolved",
 
 	Sandbox_ZomboidEvolved_ShowStageMessages = "Show Evolution Messages",
 	Sandbox_ZomboidEvolved_ShowStageMessages_tooltip = "If enabled, you will see a message above your character informing you about the new evolution stage.",
