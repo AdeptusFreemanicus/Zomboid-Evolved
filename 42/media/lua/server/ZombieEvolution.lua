@@ -65,13 +65,13 @@ if not options then return end
                                             end
 
                                             -- A function to run as the world initilizes and before zombies are placed to disable zombies from spawning
-                                            local function onInitWorld()
+                                            local function onInitGlobalModData(isNewGame)
                                                 local dayZeroPurge = true
                                                 if SandboxVars and SandboxVars.ZomboidEvolved and SandboxVars.ZomboidEvolved.EnableDayZeroPurge ~= nil then
                                                     dayZeroPurge = SandboxVars.ZomboidEvolved.EnableDayZeroPurge
                                                 end
 
-                                                if dayZeroPurge then
+                                                if dayZeroPurge and isNewGame then
                                                     setOption("ZombieConfig.PopulationStartMultiplier", 0.0)
                                                     local options = getSandboxOptions()
                                                     options:applySettings()
@@ -162,4 +162,4 @@ if not options then return end
                                                                                                         -- Update on new day or game start
                                                                                                         Events.EveryDays.Add(ZomboidEvolved.updateZombies)
                                                                                                         Events.OnGameStart.Add(ZomboidEvolved.updateZombies)
-                                                                                                        Events.onInitWorld.Add(onInitWorld)
+                                                                                                        Events.OnInitGlobalModData.Add(onInitGlobalModData)
