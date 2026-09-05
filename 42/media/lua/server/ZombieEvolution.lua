@@ -54,7 +54,7 @@ if not options then return end
                                             -- Zombie Lore evolution
                                             setOption("ZombieLore.Speed", speed)
                                             setOption("ZombieLore.Strength", strength)
-                                            setOption("ZombieLore.Toughness", tougness)
+                                            setOption("ZombieLore.Toughness", toughness)
                                             setOption("ZombieLore.Cognition", cognition)
                                             setOption("ZombieLore.Hearing", hearing)
                                             setOption("ZombieLore.Sight", sight)
@@ -129,7 +129,7 @@ if not options then return end
                                                                                             else
                                                                                                 currentStage = 4
                                                                                                 stageMessage = "is that infected running? IT'S RUNNING!!"
-                                                                                                applySettings(dayZeroPurge, maxPop, 1, 1, 1, 1, 1)
+                                                                                                applySettings(dayZeroPurge, maxPop, 1, 1, 1, 1, 1, 1)
                                                                                                 end
 
                                                                                                 -- Check if evolution has changed since last time
