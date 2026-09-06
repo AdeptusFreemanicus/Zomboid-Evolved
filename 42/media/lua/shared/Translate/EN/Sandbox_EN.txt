@@ -7,7 +7,7 @@ Sandbox_EN = {
 	Sandbox_ZomboidEvolved_EnableDayZeroPurge = "Day 0 Purge and Dynamic Population",
 	Sandbox_ZomboidEvolved_EnableDayZeroPurge_tooltip = "If enabled, the game will start with 0 zombies on day 0 and will dynamically increase the population over time."
 
-	Sandbox_ZomboidEvolved_FastShamblerDay = "Evolution 1 (Fast Shamblers)",
+	Sandbox_ZomboidEvolved_FastShamblerDay = "[Evolution Days] Evolution 1 (Fast Shamblers)",
     Sandbox_ZomboidEvolved_FastShamblerDay_tooltip = "The day when zombies become fast shamblers, becoming stronger, tougher and smarter."
 
 	Sandbox_ZomboidEvolved_SmartShamblerDay = "Evolution 2 (Smart Zombies)",
@@ -16,6 +16,6 @@ Sandbox_EN = {
 	Sandbox_ZomboidEvolved_SprinterDay = "Evolution 3 (Sprinters)",
 	Sandbox_ZomboidEvolved_SprinterDay_tooltip = "The day zombies reach max evolution."
 
-	Sandbox_ZomboidEvolved_MaxPopulation = "Peak Population Multiplier"
+	Sandbox_ZomboidEvolved_MaxPopulation = "[Population] Peak Population Multiplier"
 	Sandbox_ZomboidEvolved_MaxPopulation_tooltip = "The peak population multiplier, reached during max evolution. Disabled if Day 0 purge is disabled."
 }
