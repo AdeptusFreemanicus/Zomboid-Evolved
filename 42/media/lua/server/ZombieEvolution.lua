@@ -116,7 +116,7 @@ if not options then return end
                                                                             if days == 0 and dayZeroPurge then
                                                                                 currentStage = 0
                                                                                 stageMessage = "It's so quiet, where is everyone?"
-                                                                                applySettings(true, 0.0, 3, 3, 3, 3, 3, 3)
+                                                                                applySettings(true, 0.0, 3, 3, 3, 3, 3, 3) -- Shamblers, Weak, Fragile, Basic navigation, Poor hearing, Poor Sight
                                                                                 clearLoadedZombies()
                                                                                 print("[ZomboidEvolved] Day 0: Purge Active. Population set to 0")
 
@@ -124,28 +124,28 @@ if not options then return end
                                                                                 elseif days < fastShamblerDay then
                                                                                     currentStage = 1
                                                                                     stageMessage = "I'm noticing more infected. They still look slow though."
-                                                                                    applySettings(dayZeroPurge, 0.3, 3, 3, 3, 3, 3, 3)
+                                                                                    applySettings(dayZeroPurge, 0.3, 3, 3, 3, 3, 3, 3) -- Shamblers, Weak, Fragile, Basic navigation, Poor hearing, Poor Sight
                                                                                     print("[ZomboidEvolved] Evolution 1: Weaklings, they are weak")
 
                                                                                     -- Evolution 2: Fledlegings (Spelled wrong, sorry)
                                                                                     elseif days >= fastShamblerDay and days < smartShamblerDay then
                                                                                         currentStage = 2
                                                                                         stageMessage = "I feel like the infected are moving faster now, or am I seeing things?"
-                                                                                        applySettings(dayZeroPurge, 1.0, 2, 2, 2, 2, 2, 2)
+                                                                                        applySettings(dayZeroPurge, 1.0, 2, 2, 2, 2, 2, 2) -- Fast Shamblers, Weak, Fragile, Basic navigation, Poor hearing, Poor sight
                                                                                         print("[ZomboidEvolved] Evolution 2: Fleglengis, faster now")
 
                                                                                         -- Evolution 3: Smartones
                                                                                         elseif days >= smartShamblerDay and days < sprinterDay then
                                                                                             currentStage = 3
                                                                                             stageMessage = "Are they even stronger now? I swear some of these doors were closed..."
-                                                                                            applySettings(dayZeroPurge, math.max(1.0, maxPop * 0.75), 2, 1, 1, 1, 1, 1)
+                                                                                            applySettings(dayZeroPurge, math.max(1.0, maxPop * 0.75), 2, 1, 1, 1, 1, 1) -- Fast Shamblers, Superhuman, Tough, Open doors, Pinpoint hearing, Eagle hearing
                                                                                             print("[ZomboidEvolved] Evolution 3: Smartones, they can open doors now")
 
                                                                                             -- Evolution 4: Death
                                                                                             else
                                                                                                 currentStage = 4
                                                                                                 stageMessage = "is that infected running? IT'S RUNNING!!"
-                                                                                                applySettings(dayZeroPurge, maxPop, 1, 1, 1, 1, 1, 1)
+                                                                                                applySettings(dayZeroPurge, maxPop, 1, 1, 1, 1, 1, 1) -- Sprinters, Superhuman, Tough, Open doors, Pinpoint hearing, Eagle hearing
                                                                                                 end
 
                                                                                                 -- Check if evolution has changed since last time
