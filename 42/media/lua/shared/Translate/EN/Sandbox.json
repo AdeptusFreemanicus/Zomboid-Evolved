@@ -17,7 +17,7 @@
     "Sandbox_ZomboidEvolved_MaxPopulation": "[Population] Peak Population Multiplier",
     "Sandbox_ZomboidEvolved_MaxPopulation_tooltip": "The peak population multiplier, reached during max evolution. Disabled if Day 0 purge is disabled.",
 
-    "Sandbox_ZomboidEvolved_Evo1_Speed": "[Evolution 1] Evolution 1 - Speed",
+    "Sandbox_ZomboidEvolved_Evo1_Speed": "[Evolution 1 (Day 0-14)] Evolution 1 - Speed",
     "Sandbox_ZomboidEvolved_Evo1_Speed_tooltip": "The speed for evolution 1. By default zombies will be shamblers.\n1=Sprinter\n2=Fast\n3=Shambler",
     "Sandbox_ZomboidEvolved_Evo1_Strength": "Evolution 1 - Strength",
     "Sandbox_ZomboidEvolved_Evo1_Strength_tooltip": "The strength for evolution 1. By default zombies will be weak.\n1=Superhuman\n2=Nomral\n3=Weak",
