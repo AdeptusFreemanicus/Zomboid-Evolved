@@ -37,6 +37,9 @@ Sandbox_EN = {
 	Sandbox_ZomboidEvolved_Evo1_Sight = "Evolution 1 - Sight"
 	Sandbox_ZomboidEvolved_Evo1_Sight_tooltip = "The sight for evolution 1. By default zombies will have poor vision.\n1=Pinpoint\n2=Normal\n3=Poor"
 
+	Sandbox_ZomboidEvolved_Evo1_Lunge = "Evolution 1 - Lunge"
+	Sandbox_ZomboidEvolved_Evo1_Lunge_tooltip = "Whether zombies can lunge at evolution 1. By default zombies will not."
+
 	Sandbox_ZomboidEvolved_Evo2_Speed = "[Evolution 2] Evolution 2 - Speed"
 	Sandbox_ZomboidEvolved_Evo2_Speed_tooltip = "The speed for evolution 2. By default they will be fast shamblers.\n1=Sprinter\n2=Fast\n3=Shambler"
 
@@ -54,6 +57,9 @@ Sandbox_EN = {
 
 	Sandbox_ZomboidEvolved_Evo2_Sight = "Evolution 2 - Sight"
 	Sandbox_ZomboidEvolved_Evo2_Sight_tooltip = "The sight for evolution 2. By default zombies will have normal vision.\n1=Pinpoint\n2=Normal\n3=Poor"
+
+	Sandbox_ZomboidEvolved_Evo2_Lunge = "Evolution 2 - Lunge"
+	Sandbox_ZomboidEvolved_Evo2_Lunge_tooltip = "Whether zombies can lunge at evolution 2. By default zombies will not."
 
 	Sandbox_ZomboidEvolved_Evo3_Speed = "[Evolution 3] Evolution 3 - Speed"
 	Sandbox_ZomboidEvolved_Evo3_Speed_tooltip = "The speed for evolution 3. By default they will still be fast shamblers.\n1=Sprinter\n2=Fast\n3=Shambler"
@@ -73,6 +79,9 @@ Sandbox_EN = {
 	Sandbox_ZomboidEvolved_Evo3_Sight = "Evolution 3 - Sight"
 	Sandbox_ZomboidEvolved_Evo3_Sight_tooltip = "The sight for evolution 3. By default zombies will have eagle vision.\n1=Pinpoint\n2=Normal\n3=Poor"
 
+	Sandbox_ZomboidEvolved_Evo3_Lunge = "Evolution 3 - Lunge"
+	Sandbox_ZomboidEvolved_Evo3_Lunge_tooltip = "Whether zombies can lunge at evolution 3. By default zombies will lunge."
+
 	Sandbox_ZomboidEvolved_Evo4_Speed = "[Evolution 4] Evolution 4 - Speed"
 	Sandbox_ZomboidEvolved_Evo4_Speed_tooltip = "The speed for evolution 4. By default all zombies will be sprinters.\n1=Sprinter\n2=Fast\n3=Shambler"
 
@@ -90,4 +99,7 @@ Sandbox_EN = {
 
 	Sandbox_ZomboidEvolved_Evo4_Sight = "Evolution 4 - Sight"
 	Sandbox_ZomboidEvolved_Evo4_Sight_tooltip = "The sight for evolution 4. By default zombies will have eagle vision.\n1=Pinpoint\n2=Normal\n3=Poor"
+
+	Sandbox_ZomboidEvolved_Evo4_Lunge = "Evolution 4 - Lunge"
+	Sandbox_ZomboidEvolved_Evo4_Lunge_tooltip = "Whether zombies can lunge at evolution 4. By default zombies will lunge."
 }

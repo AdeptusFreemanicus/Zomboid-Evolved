@@ -116,6 +116,14 @@ option ZomboidEvolved.Evo1_Sight
     translation = ZomboidEvolved_Evo1_Sight,
 }
 
+option ZomboidEvolved.Evo1_Lunge
+{
+    type = boolean,
+    default = false,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_Lunge,
+}
+
 option ZomboidEvolved.Evo2_Speed
 {
     type = integer,
@@ -174,6 +182,14 @@ option ZomboidEvolved.Evo2_Sight
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Sight,
+}
+
+option ZomboidEvolved.Evo2_Lunge
+{
+    type = boolean,
+    default = false,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_Lunge,
 }
 
 option ZomboidEvolved.Evo3_Speed
@@ -236,6 +252,14 @@ option ZomboidEvolved.Evo3_Sight
     translation = ZomboidEvolved_Evo3_Sight,
 }
 
+option ZomboidEvolved.Evo3_Lunge
+{
+    type = boolean,
+    default = true,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_Lunge,
+}
+
 option ZomboidEvolved.Evo4_Speed
 {
     type = integer,
@@ -293,4 +317,12 @@ option ZomboidEvolved.Evo4_Sight
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Sight,
+}
+
+option ZomboidEvolved.Evo4_Lunge
+{
+    type = boolean,
+    default = true,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_Lunge,
 }
