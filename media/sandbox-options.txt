@@ -96,6 +96,26 @@ option ZomboidEvolved.Evo1_Cognition
     translation = ZomboidEvolved_Evo1_Cognition,
 }
 
+option ZomboidEvolved.Evo1_Hearing
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 3,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_Hearing,
+}
+
+option ZomboidEvolved.Evo1_Sight
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 3,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_Sight,
+}
+
 option ZomboidEvolved.Evo2_Speed
 {
     type = integer,
@@ -134,6 +154,26 @@ option ZomboidEvolved.Evo2_Cognition
     default = 3,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Cognition,
+}
+
+option ZomboidEvolved.Evo2_Hearing
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_Hearing,
+}
+
+option ZomboidEvolved.Evo2_Sight
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_Sight,
 }
 
 option ZomboidEvolved.Evo3_Speed
@@ -176,6 +216,26 @@ option ZomboidEvolved.Evo3_Cognition
     translation = ZomboidEvolved_Evo3_Cognition,
 }
 
+option ZomboidEvolved.Evo3_Hearing
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_Hearing,
+}
+
+option ZomboidEvolved.Evo3_Sight
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_Sight,
+}
+
 option ZomboidEvolved.Evo4_Speed
 {
     type = integer,
@@ -214,4 +274,23 @@ option ZomboidEvolved.Evo4_Cognition
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Cognition,
+}
+option ZomboidEvolved.Evo4_Hearing
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_Hearing,
+}
+
+option ZomboidEvolved.Evo4_Sight
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_Sight,
 }
