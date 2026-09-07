@@ -124,6 +124,14 @@ option ZomboidEvolved.Evo1_Lunge
     translation = ZomboidEvolved_Evo1_Lunge,
 }
 
+option ZomboidEvolved.Evo1_DragDown
+{
+    type = boolean,
+    default = false,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_DragDown,
+}
+
 option ZomboidEvolved.Evo2_Speed
 {
     type = integer,
@@ -190,6 +198,14 @@ option ZomboidEvolved.Evo2_Lunge
     default = false,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Lunge,
+}
+
+option ZomboidEvolved.Evo2_DragDown
+{
+    type = boolean,
+    default = false,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_DragDown,
 }
 
 option ZomboidEvolved.Evo3_Speed
@@ -260,6 +276,14 @@ option ZomboidEvolved.Evo3_Lunge
     translation = ZomboidEvolved_Evo3_Lunge,
 }
 
+option ZomboidEvolved.Evo3_DragDown
+{
+    type = boolean,
+    default = true,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_DragDown,
+}
+
 option ZomboidEvolved.Evo4_Speed
 {
     type = integer,
@@ -325,4 +349,12 @@ option ZomboidEvolved.Evo4_Lunge
     default = true,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Lunge,
+}
+
+option ZomboidEvolved.Evo4_DragDown
+{
+    type = boolean,
+    default = true,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_DragDown,
 }
