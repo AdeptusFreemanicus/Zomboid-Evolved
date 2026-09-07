@@ -116,6 +116,16 @@ option ZomboidEvolved.Evo1_Sight
     translation = ZomboidEvolved_Evo1_Sight,
 }
 
+option ZomboidEvolved.Evo1_Memory
+{
+    type = integer,
+    min = 1,
+    max = 4,
+    default = 3,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_Memory,
+}
+
 option ZomboidEvolved.Evo1_Lunge
 {
     type = boolean,
@@ -190,6 +200,16 @@ option ZomboidEvolved.Evo2_Sight
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Sight,
+}
+
+option ZomboidEvolved.Evo2_Memory
+{
+    type = integer,
+    min = 1,
+    max = 4,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_Memory,
 }
 
 option ZomboidEvolved.Evo2_Lunge
@@ -268,6 +288,16 @@ option ZomboidEvolved.Evo3_Sight
     translation = ZomboidEvolved_Evo3_Sight,
 }
 
+option ZomboidEvolved.Evo3_Memory
+{
+    type = integer,
+    min = 1,
+    max = 4,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_Memory,
+}
+
 option ZomboidEvolved.Evo3_Lunge
 {
     type = boolean,
@@ -341,6 +371,16 @@ option ZomboidEvolved.Evo4_Sight
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Sight,
+}
+
+option ZomboidEvolved.Evo4_Memory
+{
+    type = integer,
+    min = 1,
+    max = 4,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_Memory,
 }
 
 option ZomboidEvolved.Evo4_Lunge
