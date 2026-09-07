@@ -55,3 +55,163 @@ option ZomboidEvolved.MaxPopulation
     page = ZomboidEvolved,
     translation = ZomboidEvolved_MaxPopulation,
 }
+
+option ZomboidEvolved.Evo1_Speed
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 3,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_Speed,
+}
+
+option ZomboidEvolved.Evo1_Strength
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 3,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_Strength,
+}
+
+option ZomboidEvolved.Evo1_Toughness
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 3,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_Toughness,
+}
+
+option ZomboidEvolved.Evo1_Cognition
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 3,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_Cognition,
+}
+
+option ZomboidEvolved.Evo2_Speed
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_Speed,
+}
+
+option ZomboidEvolved.Evo2_Strength
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_Strength,
+}
+
+option ZomboidEvolved.Evo2_Toughness
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_Toughness,
+}
+
+option ZomboidEvolved.Evo2_Cognition
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 3,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_Cognition,
+}
+
+option ZomboidEvolved.Evo3_Speed
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_Speed,
+}
+
+option ZomboidEvolved.Evo3_Strength
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_Strength,
+}
+
+option ZomboidEvolved.Evo3_Toughness
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_Toughness,
+}
+
+option ZomboidEvolved.Evo3_Cognition
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_Cognition,
+}
+
+option ZomboidEvolved.Evo4_Speed
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_Speed,
+}
+
+option ZomboidEvolved.Evo4_Strength
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_Strength,
+}
+
+option ZomboidEvolved.Evo4_Toughness
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_Toughness,
+}
+
+option ZomboidEvolved.Evo4_Cognition
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_Cognition,
+}

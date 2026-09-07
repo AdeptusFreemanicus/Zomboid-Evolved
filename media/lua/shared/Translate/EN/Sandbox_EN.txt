@@ -2,7 +2,7 @@ Sandbox_EN = {
 	Sandbox_ZomboidEvolved = "Zomboid Evolved",
 
 	Sandbox_ZomboidEvolved_ShowStageMessages = "Show Evolution Messages",
-	Sandbox_ZomboidEvolved_ShowStageMessages_tooltip = "If enabled, you will see a message above your character informing you about the new evolution stage.",
+	Sandbox_ZomboidEvolved_ShowStageMessages_tooltip = "If enabled, you will see an immersive message above your character informing you about the new evolution stage.",
 
 	Sandbox_ZomboidEvolved_EnableDayZeroPurge = "Day 0 Purge and Dynamic Population",
 	Sandbox_ZomboidEvolved_EnableDayZeroPurge_tooltip = "If enabled, the game will start with 0 zombies on day 0 and will dynamically increase the population over time."
@@ -17,5 +17,53 @@ Sandbox_EN = {
 	Sandbox_ZomboidEvolved_SprinterDay_tooltip = "The day zombies reach max evolution."
 
 	Sandbox_ZomboidEvolved_MaxPopulation = "[Population] Peak Population Multiplier"
-	Sandbox_ZomboidEvolved_MaxPopulation_tooltip = "The peak population multiplier, reached during max evolution. Disabled if Day 0 purge is disabled."
+	Sandbox_ZomboidEvolved_MaxPopulation_tooltip = "The peak population multiplier, reached during max evolution. Disabled if Day 0 Purge is disabled."
+
+	Sandbox_ZomboidEvolved_Evo1_Speed = "[Evolution 1] Evolution 1 - Speed"
+	Sandbox_ZomboidEvolved_Evo1_Speed_tooltip = "The speed for evolution 1. By default zombies will be shamblers.\n1=Sprinter\n2=Fast\n3=Shambler"
+
+	Sandbox_ZomboidEvolved_Evo1_Strength = "Evolution 1 - Strength"
+	Sandbox_ZomboidEvolved_Evo1_Strength_tooltip = "The strength for evolution 1. By default zombies will be weak.\n1=Superhuman\n2=Normal\n3=Weak"
+
+	Sandbox_ZomboidEvolved_Evo1_Toughness = "Evolution 1 - Toughness"
+	Sandbox_ZomboidEvolved_Evo1_Toughness_tooltip = "The toughness for evolution 1. By default zombies will be fragile.\n1=Tough\n2=Normal\n3=Fragile"
+
+	Sandbox_ZomboidEvolved_Evo1_Cognition = "Evolution 1 - Cognition"
+	Sandbox_ZomboidEvolved_Evo1_Cognition_tooltip = "The cognition for evolution 1. By default zomboies will have basic navigation.\n1=Doors\n2=Navigation\n3=Basic"
+
+	Sandbox_ZomboidEvolved_Evo2_Speed = "[Evolution 2] Evolution 2 - Speed"
+	Sandbox_ZomboidEvolved_Evo2_Speed_tooltip = "The speed for evolution 2. By default they will be fast shamblers.\n1=Sprinter\n2=Fast\n3=Shambler"
+
+	Sandbox_ZomboidEvolved_Evo2_Strength = "Evolution 2 - Strength"
+	Sandbox_ZomboidEvolved_Evo2_Strength_tooltip = "The strength for evolution 2. By default zombies have weak strength.\n1=Superhuman\n2=Normal\n3=Weak"
+
+	Sandbox_ZomboidEvolved_Evo2_Toughness = "Evolution 2 - Toughness"
+	Sandbox_ZomboidEvolved_Evo2_Toughness_tooltip = "The toughness for evolution 2. By default zombies have normal toughness.\n1=Tough\n2=Normal\n3=Fragile"
+
+	Sandbox_ZomboidEvolved_Evo2_Cognition = "Evolution 2 - Cognition"
+	Sandbox_ZomboidEvolved_Evo2_Cognition_tooltip = "The cognition for evolution 2. By default zombies will have normal navigation.\n1=Doors\n2=Navigation\n3=Basic"
+
+	Sandbox_ZomboidEvolved_Evo3_Speed = "[Evolution 3] Evolution 3 - Speed"
+	Sandbox_ZomboidEvolved_Evo3_Speed_tooltip = "The speed for evolution 1. By default they will still be fast shamblers.\n1=Sprinter\n2=Fast\n3=Shambler"
+
+	Sandbox_ZomboidEvolved_Evo3_Strength = "Evolution 3 - Strength"
+	Sandbox_ZomboidEvolved_Evo3_Strength_tooltip = "The strength for evolution 3. By default zombies have normal strength.\n1=Superhuman\n2=Normal\n3=Weak"
+
+	Sandbox_ZomboidEvolved_Evo3_Toughness = "Evolution 3 - Toughness"
+	Sandbox_ZomboidEvolved_Evo3_Toughness_tooltip = "The toughness for evolution 3. By default zombies will be tough.\n1=Tough\n2=Normal\n3=Fragile"
+
+	Sandbox_ZomboidEvolved_Evo3_Cognition = "Evolution 3 - Cognition"
+	Sandbox_ZomboidEvolved_Evo3_Cognition_tooltip = "The cognition for evolution 3. By default zombies can open doors.\n1=Doors\n2=Navigation\n3=Basic"
+
+	Sandbox_ZomboidEvolved_Evo4_Speed = "[Evolution 4] Evolution 4 - Speed"
+	Sandbox_ZomboidEvolved_Evo4_Speed_tooltip = "The speed for evolution 1. By default all zombies will be sprinters.\n1=Sprinter\n2=Fast\n3=Shambler"
+
+	Sandbox_ZomboidEvolved_Evo4_Strength = "Evolution 4 - Strength"
+	Sandbox_ZomboidEvolved_Evo4_Strength_tooltip = "The strength for evolution 4. By default zombies have superhuman strength.\n1=Superhuman\n2=Normal\n3=Weak"
+
+	Sandbox_ZomboidEvolved_Evo4_Toughness = "Evolution 4 - Toughness"
+	Sandbox_ZomboidEvolved_Evo4_Toughness_tooltip = "The toughness for evolution 4. By default zombies will be tough.\n1=Tough\n2=Normal\n3=Fragile"
+
+	Sandbox_ZomboidEvolved_Evo4_Cognition = "Evolution 4 - Cognition"
+	Sandbox_ZomboidEvolved_Evo4_Cognition_tooltip = "The cognition for evolution 4. By default zombies can still open doors.\n1=Doors\n2=Navigation\n3=Basic"
 }
