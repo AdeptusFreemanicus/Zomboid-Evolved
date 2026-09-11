@@ -126,6 +126,16 @@ option ZomboidEvolved.Evo1_Memory
     translation = ZomboidEvolved_Evo1_Memory,
 }
 
+option ZomboidEvolved.Evo1_ActiveOnly
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_ActiveOnly,
+}
+
 option ZomboidEvolved.Evo1_Lunge
 {
     type = boolean,
@@ -210,6 +220,16 @@ option ZomboidEvolved.Evo2_Memory
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Memory,
+}
+
+option ZomboidEvolved.Evo2_ActiveOnly
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_ActiveOnly,
 }
 
 option ZomboidEvolved.Evo2_Lunge
@@ -298,6 +318,16 @@ option ZomboidEvolved.Evo3_Memory
     translation = ZomboidEvolved_Evo3_Memory,
 }
 
+option ZomboidEvolved.Evo3_ActiveOnly
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_ActiveOnly,
+}
+
 option ZomboidEvolved.Evo3_Lunge
 {
     type = boolean,
@@ -381,6 +411,16 @@ option ZomboidEvolved.Evo4_Memory
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Memory,
+}
+
+option ZomboidEvolved.Evo4_ActiveOnly
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_ActiveOnly,
 }
 
 option ZomboidEvolved.Evo4_Lunge

@@ -40,6 +40,9 @@ Sandbox_EN = {
 	Sandbox_ZomboidEvolved_Evo1_Memory = "Evolution 1 - Memory"
 	Sandbox_ZomboidEvolved_Evo1_Memory_tooltip = "The memory for evolution 1. By default zombies will have short memory.\n1=Long\n2=Normal\n3=Short\n4=None"
 
+	Sandbox_ZomboidEvolved_Evo1_ActiveOnly = "Evolution 1 - Day/Night Speed Effect"
+	Sandbox_ZomboidEvolved_Evo1_ActiveOnly_tooltip = "Decides if zombies are more active at day, night, or both for evolution 1. By default zombies will be active in both day and night.\n1=Both\n2=Night\n3=Day"
+
 	Sandbox_ZomboidEvolved_Evo1_Lunge = "Evolution 1 - Lunge"
 	Sandbox_ZomboidEvolved_Evo1_Lunge_tooltip = "Whether zombies can lunge at evolution 1. By default zombies will not."
 
@@ -66,6 +69,9 @@ Sandbox_EN = {
 
 	Sandbox_ZomboidEvolved_Evo2_Memory = "Evolution 2 - Memory"
 	Sandbox_ZomboidEvolved_Evo2_Memory_tooltip = "The memory for evolution 2. By default zombies will have normal memory.\n1=Long\n2=Normal\n3=Short\n4=None"
+
+	Sandbox_ZomboidEvolved_Evo2_ActiveOnly = "Evolution 2 - Day/Night Speed Effect"
+	Sandbox_ZomboidEvolved_Evo2_ActiveOnly_tooltip = "Decides if zombies are more active at day, night, or both for evolution 2. By default zombies will be active in both day and night.\n1=Both\n2=Night\n3=Day"
 
 	Sandbox_ZomboidEvolved_Evo2_Lunge = "Evolution 2 - Lunge"
 	Sandbox_ZomboidEvolved_Evo2_Lunge_tooltip = "Whether zombies can lunge at evolution 2. By default zombies will not."
@@ -94,6 +100,9 @@ Sandbox_EN = {
 	Sandbox_ZomboidEvolved_Evo3_Memory = "Evolution 3 - Memory"
 	Sandbox_ZomboidEvolved_Evo3_Memory_tooltip = "The memory for evolution 3. By default zombies will have long memory.\n1=Long\n2=Normal\n3=Short\n4=None"
 
+	Sandbox_ZomboidEvolved_Evo3_ActiveOnly = "Evolution 3 - Day/Night Speed Effect"
+	Sandbox_ZomboidEvolved_Evo3_ActiveOnly_tooltip = "Decides if zombies are more active at day, night, or both for evolution 3. By default zombies will be active in both day and night.\n1=Both\n2=Night\n3=Day"
+
 	Sandbox_ZomboidEvolved_Evo3_Lunge = "Evolution 3 - Lunge"
 	Sandbox_ZomboidEvolved_Evo3_Lunge_tooltip = "Whether zombies can lunge at evolution 3. By default zombies will lunge."
 
@@ -120,6 +129,9 @@ Sandbox_EN = {
 
 	Sandbox_ZomboidEvolved_Evo4_Memory = "Evolution 4 - Memory"
 	Sandbox_ZomboidEvolved_Evo4_Memory_tooltip = "The memory for evolution 4. By default zombies will have long memory.\n1=Long\n2=Normal\n3=Short\n4=None"
+
+	Sandbox_ZomboidEvolved_Evo4_ActiveOnly = "Evolution 4 - Day/Night Speed Effect"
+	Sandbox_ZomboidEvolved_Evo4_ActiveOnly_tooltip = "Decides if zombies are more active at day, night, or both for evolution 4. By default zombies will be active at night.\n1=Both\n2=Night\n3=Day"
 
 	Sandbox_ZomboidEvolved_Evo4_Lunge = "Evolution 4 - Lunge"
 	Sandbox_ZomboidEvolved_Evo4_Lunge_tooltip = "Whether zombies can lunge at evolution 4. By default zombies will lunge."
