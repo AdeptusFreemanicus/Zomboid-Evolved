@@ -58,92 +58,92 @@ option ZomboidEvolved.MaxPopulation
 
 option ZomboidEvolved.Evo1_Speed
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 3,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_Speed,
+    valueTranslation = ZomboidEvolved_Speed,
 }
 
 option ZomboidEvolved.Evo1_Strength
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 3,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_Strength,
+    valueTranslation = ZomboidEvolved_Strength,
 }
 
 option ZomboidEvolved.Evo1_Toughness
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 3,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_Toughness,
+    valueTranslation = ZomboidEvolved_Toughness,
 }
 
 option ZomboidEvolved.Evo1_Cognition
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 3,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_Cognition,
+    valueTranslation = ZomboidEvolved_Cognition,
 }
 
 option ZomboidEvolved.Evo1_Hearing
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 3,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_Hearing,
+    valueTranslation = ZomboidEvolved_Hearing,
 }
 
 option ZomboidEvolved.Evo1_Sight
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 3,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_Sight,
+    valueTranslation = ZomboidEvolved_Sight,
 }
 
 option ZomboidEvolved.Evo1_Memory
 {
-    type = integer,
-    min = 1,
-    max = 4,
+    type = enum,
+    numValues = 4,
     default = 3,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_Memory,
+    valueTranslation = ZomboidEvolved_Memory,
 }
 
 option ZomboidEvolved.Evo1_ActiveOnly
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 3,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_ActiveOnly,
+    valueTranslation = ZomboidEvolved_ActiveOnly,
 }
 
 option ZomboidEvolved.Evo1_Transmission
 {
-    type = integer,
-    min = 1,
-    max = 4,
+    type = enum,
+    numValues = 4,
     default = 4,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_Transmission,
+    valueTranslation = ZomboidEvolved_Transmission,
 }
 
 option ZomboidEvolved.Evo1_Lunge
@@ -164,92 +164,92 @@ option ZomboidEvolved.Evo1_DragDown
 
 option ZomboidEvolved.Evo2_Speed
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Speed,
+    valueTranslation = ZomboidEvolved_Speed,
 }
 
 option ZomboidEvolved.Evo2_Strength
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Strength,
+    valueTranslation = ZomboidEvolved_Strength,
 }
 
 option ZomboidEvolved.Evo2_Toughness
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Toughness,
+    valueTranslation = ZomboidEvolved_Toughness,
 }
 
 option ZomboidEvolved.Evo2_Cognition
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 3,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Cognition,
+    valueTranslation = ZomboidEvolved_Cognition,
 }
 
 option ZomboidEvolved.Evo2_Hearing
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Hearing,
+    valueTranslation = ZomboidEvolved_Hearing,
 }
 
 option ZomboidEvolved.Evo2_Sight
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Sight,
+    valueTranslation = ZomboidEvolved_Sight,
 }
 
 option ZomboidEvolved.Evo2_Memory
 {
-    type = integer,
-    min = 1,
-    max = 4,
+    type = enum,
+    numValues = 4,
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Memory,
+    valueTranslation = ZomboidEvolved_Memory,
 }
 
 option ZomboidEvolved.Evo2_ActiveOnly
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 3,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_ActiveOnly,
+    valueTranslation = ZomboidEvolved_ActiveOnly,
 }
 
 option ZomboidEvolved.Evo2_Transmission
 {
-    type = integer,
-    min = 1,
-    max = 4,
+    type = enum,
+    numValues = 4,
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Transmission,
+    valueTranslation = ZomboidEvolved_Transmission,
 }
 
 option ZomboidEvolved.Evo2_Lunge
@@ -270,92 +270,92 @@ option ZomboidEvolved.Evo2_DragDown
 
 option ZomboidEvolved.Evo3_Speed
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_Speed,
+    valueTranslation = ZomboidEvolved_Speed,
 }
 
 option ZomboidEvolved.Evo3_Strength
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_Strength,
+    valueTranslation = ZomboidEvolved_Strength,
 }
 
 option ZomboidEvolved.Evo3_Toughness
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_Toughness,
+    valueTranslation = ZomboidEvolved_Toughness,
 }
 
 option ZomboidEvolved.Evo3_Cognition
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_Cognition,
+    valueTranslation = ZomboidEvolved_Cognition,
 }
 
 option ZomboidEvolved.Evo3_Hearing
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_Hearing,
+    valueTranslation = ZomboidEvolved_Hearing,
 }
 
 option ZomboidEvolved.Evo3_Sight
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_Sight,
+    valueTranslation = ZomboidEvolved_Sight,
 }
 
 option ZomboidEvolved.Evo3_Memory
 {
-    type = integer,
-    min = 1,
-    max = 4,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_Memory,
+    valueTranslation = ZomboidEvolved_Memory,
 }
 
 option ZomboidEvolved.Evo3_ActiveOnly
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 3,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_ActiveOnly,
+    valueTranslation = ZomboidEvolved_ActiveOnly,
 }
 
 option ZomboidEvolved.Evo3_Transmission
 {
-    type = integer,
-    min = 1,
-    max = 4,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_Transmission,
+    valueTranslation = ZomboidEvolved_Transmission,
 }
 
 option ZomboidEvolved.Evo3_Lunge
@@ -376,91 +376,91 @@ option ZomboidEvolved.Evo3_DragDown
 
 option ZomboidEvolved.Evo4_Speed
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Speed,
+    valueTranslation = ZomboidEvolved_Speed,
 }
 
 option ZomboidEvolved.Evo4_Strength
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Strength,
+    valueTranslation = ZomboidEvolved_Strength,
 }
 
 option ZomboidEvolved.Evo4_Toughness
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Toughness,
+    valueTranslation = ZomboidEvolved_Toughness,
 }
 
 option ZomboidEvolved.Evo4_Cognition
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Cognition,
+    valueTranslation = ZomboidEvolved_Cognition,
 }
 option ZomboidEvolved.Evo4_Hearing
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Hearing,
+    valueTranslation = ZomboidEvolved_Hearing,
 }
 
 option ZomboidEvolved.Evo4_Sight
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Sight,
+    valueTranslation = ZomboidEvolved_Sight,
 }
 
 option ZomboidEvolved.Evo4_Memory
 {
-    type = integer,
-    min = 1,
-    max = 4,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Memory,
+    valueTranslation = ZomboidEvolved_Memory,
 }
 
 option ZomboidEvolved.Evo4_ActiveOnly
 {
-    type = integer,
-    min = 1,
-    max = 3,
+    type = enum,
+    numValues = 3,
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_ActiveOnly,
+    valueTranslation = ZomboidEvolved_ActiveOnly,
 }
 
 option ZomboidEvolved.Evo4_Transmission
 {
-    type = integer,
-    min = 1,
-    max = 4,
+    type = enum,
+    numValues = 4,
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_Transmission,
+    valueTranslation = ZomboidEvolved_Transmission,
 }
 
 option ZomboidEvolved.Evo4_Lunge
