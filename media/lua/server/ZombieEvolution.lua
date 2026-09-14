@@ -136,7 +136,7 @@ if not options then return end
                                                                                 if zVars["Evo" .. i .. "_DragDown"] then evos[i].dra = zVars["Evo" .. i .. "_DragDown"] end
                                                                                 if zVars["Evo" .. i .. "_ActiveOnly"] then evos[i].dnn = zVars["Evo" .. i .. "_ActiveOnly"] end
                                                                                 if zVars["Evo" .. i .. "_Transmission"] then evos[i].infect = zVars["Evo" .. i .. "_Transmission"] end
-                                                                                if zVars["Evo" .. i .. "_SprinterPercent"] then evos[i].spPct = zVars["Evo" .. i .. "_SprinterPercent"] end
+                                                                                if zVars["Evo" .. i .. "_SprinterPercentage"] then evos[i].spPct = zVars["Evo" .. i .. "_SprinterPercentage"] end
                                                                                 if zVars["Evo" .. i .. "_DoorPercent"] then evos[i].dpPct = zVars["Evo" .. i .. "_DoorPercent"] end
                                                                             end
                                                 end
