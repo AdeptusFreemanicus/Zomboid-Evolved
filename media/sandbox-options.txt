@@ -136,6 +136,16 @@ option ZomboidEvolved.Evo1_ActiveOnly
     translation = ZomboidEvolved_Evo1_ActiveOnly,
 }
 
+option ZomboidEvolved.Evo1_Transmission
+{
+    type = integer,
+    min = 1,
+    max = 4,
+    default = 4,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_Transmission,
+}
+
 option ZomboidEvolved.Evo1_Lunge
 {
     type = boolean,
@@ -230,6 +240,16 @@ option ZomboidEvolved.Evo2_ActiveOnly
     default = 1,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_ActiveOnly,
+}
+
+option ZomboidEvolved.Evo2_Transmission
+{
+    type = integer,
+    min = 1,
+    max = 4,
+    default = 2,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_Transmission,
 }
 
 option ZomboidEvolved.Evo2_Lunge
@@ -328,6 +348,16 @@ option ZomboidEvolved.Evo3_ActiveOnly
     translation = ZomboidEvolved_Evo3_ActiveOnly,
 }
 
+option ZomboidEvolved.Evo3_Transmission
+{
+    type = integer,
+    min = 1,
+    max = 4,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_Transmission,
+}
+
 option ZomboidEvolved.Evo3_Lunge
 {
     type = boolean,
@@ -421,6 +451,16 @@ option ZomboidEvolved.Evo4_ActiveOnly
     default = 2,
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo4_ActiveOnly,
+}
+
+option ZomboidEvolved.Evo4_Transmission
+{
+    type = integer,
+    min = 1,
+    max = 4,
+    default = 1,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_Transmission,
 }
 
 option ZomboidEvolved.Evo4_Lunge
