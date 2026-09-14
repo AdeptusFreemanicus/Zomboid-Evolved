@@ -66,6 +66,17 @@ option ZomboidEvolved.Evo1_Speed
     valueTranslation = ZomboidEvolved_Speed,
 }
 
+option ZomboidEvolved.Evo1_SprinterPercentage
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 0,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_SprinterPercentage,
+}
+
+
 option ZomboidEvolved.Evo1_Strength
 {
     type = enum,
@@ -94,6 +105,16 @@ option ZomboidEvolved.Evo1_Cognition
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo1_Cognition,
     valueTranslation = ZomboidEvolved_Cognition,
+}
+
+option ZomboidEvolved.Evo1_DoorPercent
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 0,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo1_DoorPercent,
 }
 
 option ZomboidEvolved.Evo1_Hearing
@@ -172,6 +193,16 @@ option ZomboidEvolved.Evo2_Speed
     valueTranslation = ZomboidEvolved_Speed,
 }
 
+option ZomboidEvolved.Evo2_SprinterPercentage
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 0,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_SprinterPercentage,
+}
+
 option ZomboidEvolved.Evo2_Strength
 {
     type = enum,
@@ -200,6 +231,16 @@ option ZomboidEvolved.Evo2_Cognition
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo2_Cognition,
     valueTranslation = ZomboidEvolved_Cognition,
+}
+
+option ZomboidEvolved.Evo2_DoorPercent
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 0,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo2_DoorPercent,
 }
 
 option ZomboidEvolved.Evo2_Hearing
@@ -278,6 +319,16 @@ option ZomboidEvolved.Evo3_Speed
     valueTranslation = ZomboidEvolved_Speed,
 }
 
+option ZomboidEvolved.Evo3_SprinterPercentage
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 0,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_SprinterPercentage,
+}
+
 option ZomboidEvolved.Evo3_Strength
 {
     type = enum,
@@ -306,6 +357,16 @@ option ZomboidEvolved.Evo3_Cognition
     page = ZomboidEvolved,
     translation = ZomboidEvolved_Evo3_Cognition,
     valueTranslation = ZomboidEvolved_Cognition,
+}
+
+option ZomboidEvolved.Evo3_DoorPercent
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 0,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo3_DoorPercent,
 }
 
 option ZomboidEvolved.Evo3_Hearing
@@ -384,6 +445,16 @@ option ZomboidEvolved.Evo4_Speed
     valueTranslation = ZomboidEvolved_Speed,
 }
 
+option ZomboidEvolved.Evo4_SprinterPercentage
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 0,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_SprinterPercentage,
+}
+
 option ZomboidEvolved.Evo4_Strength
 {
     type = enum,
@@ -413,6 +484,17 @@ option ZomboidEvolved.Evo4_Cognition
     translation = ZomboidEvolved_Evo4_Cognition,
     valueTranslation = ZomboidEvolved_Cognition,
 }
+
+option ZomboidEvolved.Evo4_DoorPercent
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 0,
+    page = ZomboidEvolved,
+    translation = ZomboidEvolved_Evo4_DoorPercent,
+}
+
 option ZomboidEvolved.Evo4_Hearing
 {
     type = enum,

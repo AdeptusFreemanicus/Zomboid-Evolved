@@ -43,7 +43,7 @@ if not options then return end
                                         end
                                         end
                                         -- Apply lore and zombie population settings, this will require enabling zombie respawn, not active if purge is off
-                                        local function applySettings(modifyPop, popMultiplier, speed, strength, toughness, cognition, hearing, sight, memory, lunge, dragDown, daynnight, infect)
+                                        local function applySettings(modifyPop, popMultiplier, speed, strength, toughness, cognition, hearing, sight, memory, lunge, dragDown, daynnight, infect, sprinterPercent, doorPercent)
                                         if modifyPop then
                                             setOption("ZombieConfig.PopulationMultiplier",popMultiplier)
                                             setOption("ZombieConfig.RespawnHours", 16.0)
@@ -63,6 +63,8 @@ if not options then return end
                                             setOption("ZombieLore.ZombiesDragDown", dragDown)
                                             setOption("ZombieLore.ActiveOnly", daynnight)
                                             setOption("ZombieLore.Transmission", infect)
+                                            setOption("ZombieLore.SprinterPercentage", sprinterPercent or 0)
+                                            setOption("ZombieLore.DoorOpeningPercentage", doorPercent or 0)
 
                                             local options = getSandboxOptions()
                                             options:applySettings()
@@ -103,10 +105,10 @@ if not options then return end
 
                                                 -- Default evolution stats:
                                                 local evos = {
-                                                    [1] = { speed = 3, str = 3, tou = 3, cog = 3, hea = 3, sig = 3, mem = 3, lun = false, dra = false, dnn = 1, infect = 4 },
-                                                    [2] = { speed = 2, str = 2, tou = 2, cog = 3, hea = 2, sig = 2, mem = 2, lun = false, dra = false, dnn = 1, infect = 2 },
-                                                    [3] = { speed = 2, str = 1, tou = 1, cog = 1, hea = 1, sig = 1, mem = 1, lun = true, dra = true, dnn = 1, infect = 1 },
-                                                    [4] = { speed = 1, str = 1, tou = 1, cog = 1, hea = 1, sig = 1, mem = 1, lun = true, dra = true, dnn = 2, infect = 1 },
+                                                    [1] = { speed = 3, str = 3, tou = 3, cog = 3, hea = 3, sig = 3, mem = 3, lun = false, dra = false, dnn = 1, infect = 4, spPct= 0, dpPct = 0 },
+                                                    [2] = { speed = 2, str = 2, tou = 2, cog = 3, hea = 2, sig = 2, mem = 2, lun = false, dra = false, dnn = 1, infect = 2, spPct= 0, dpPct = 0 },
+                                                    [3] = { speed = 2, str = 1, tou = 1, cog = 1, hea = 1, sig = 1, mem = 1, lun = true, dra = true, dnn = 1, infect = 1, spPct= 0, dpPct = 0 },
+                                                    [4] = { speed = 1, str = 1, tou = 1, cog = 1, hea = 1, sig = 1, mem = 1, lun = true, dra = true, dnn = 2, infect = 1, spPct= 0, dpPct = 0 },
                                                 }
 
                                                 -- Check all user custom settings
@@ -134,6 +136,8 @@ if not options then return end
                                                                                 if zVars["Evo" .. i .. "_DragDown"] then evos[i].dra = zVars["Evo" .. i .. "_DragDown"] end
                                                                                 if zVars["Evo" .. i .. "_ActiveOnly"] then evos[i].dnn = zVars["Evo" .. i .. "_ActiveOnly"] end
                                                                                 if zVars["Evo" .. i .. "_Transmission"] then evos[i].infect = zVars["Evo" .. i .. "_Transmission"] end
+                                                                                if zVars["Evo" .. i .. "_SprinterPercent"] then evos[i].spPct = zVars["Evo" .. i .. "_SprinterPercent"] end
+                                                                                if zVars["Evo" .. i .. "_DoorPercent"] then evos[i].dpPct = zVars["Evo" .. i .. "_DoorPercent"] end
                                                                             end
                                                 end
 
@@ -158,7 +162,7 @@ if not options then return end
                                                                             if days == 0 and dayZeroPurge then
                                                                                 currentStage = 0
                                                                                 stageMessage = "It's so quiet, where is everyone?"
-                                                                                applySettings(true, 0.0, evos[1].speed, evos[1].str, evos[1].tou, evos[1].cog, evos[1].hea, evos[1].sig, evos[1].mem, evos[1].lun, evos[1].dra, evos[1].dnn, evos[1].infect) -- Shamblers, Weak, Fragile, Basic navigation, Poor hearing, Poor Sight, Short memory, Can't Lunge, Can't Drag Down, Both Day and Night, No infection
+                                                                                applySettings(true, 0.0, evos[1].speed, evos[1].str, evos[1].tou, evos[1].cog, evos[1].hea, evos[1].sig, evos[1].mem, evos[1].lun, evos[1].dra, evos[1].dnn, evos[1].infect, evos[1].spPct, evos[1].dpPct) -- Shamblers, Weak, Fragile, Basic navigation, Poor hearing, Poor Sight, Short memory, Can't Lunge, Can't Drag Down, Both Day and Night, No infection
                                                                                 clearLoadedZombies()
                                                                                 print("[ZomboidEvolved] Day 0: Purge Active. Population set to 0")
 
@@ -166,28 +170,28 @@ if not options then return end
                                                                                 elseif days < fastShamblerDay then
                                                                                     currentStage = 1
                                                                                     stageMessage = "I'm noticing more infected. They still look slow though."
-                                                                                    applySettings(dayZeroPurge, 0.3, evos[1].speed, evos[1].str, evos[1].tou, evos[1].cog, evos[1].hea, evos[1].sig, evos[1].mem, evos[1].lun, evos[1].dra, evos[1].dnn, evos[1].infect) -- Shamblers, Weak, Fragile, Basic navigation, Poor hearing, Poor Sight, Short memory, Can't Lunge, Can't Drag Down, Both Day and Night, No infection
+                                                                                    applySettings(dayZeroPurge, 0.3, evos[1].speed, evos[1].str, evos[1].tou, evos[1].cog, evos[1].hea, evos[1].sig, evos[1].mem, evos[1].lun, evos[1].dra, evos[1].dnn, evos[1].infect, evos[1].spPct, evos[1].dpPct) -- Shamblers, Weak, Fragile, Basic navigation, Poor hearing, Poor Sight, Short memory, Can't Lunge, Can't Drag Down, Both Day and Night, No infection
                                                                                     print("[ZomboidEvolved] Evolution 1: Weaklings, they are weak")
 
                                                                                     -- Evolution 2: Fledglings
                                                                                     elseif days >= fastShamblerDay and days < smartShamblerDay then
                                                                                         currentStage = 2
                                                                                         stageMessage = "I feel like the infected are moving faster now, or am I seeing things?"
-                                                                                        applySettings(dayZeroPurge, 1.0, evos[2].speed, evos[2].str, evos[2].tou, evos[2].cog, evos[2].hea, evos[2].sig, evos[2].mem, evos[2].lun, evos[2].dra, evos[2].dnn, evos[2].infect) -- Fast Shamblers, Normal, Normal, Navigation, Normal hearing, Normal sight, Normal memory, Can't Lunge, Can't Drag Down, Both Day and Night, Bite only
+                                                                                        applySettings(dayZeroPurge, 1.0, evos[2].speed, evos[2].str, evos[2].tou, evos[2].cog, evos[2].hea, evos[2].sig, evos[2].mem, evos[2].lun, evos[2].dra, evos[2].dnn, evos[2].infect, evos[2].spPct, evos[2].dpPct) -- Fast Shamblers, Normal, Normal, Navigation, Normal hearing, Normal sight, Normal memory, Can't Lunge, Can't Drag Down, Both Day and Night, Bite only
                                                                                         print("[ZomboidEvolved] Evolution 2: Fledglings, faster now")
 
                                                                                         -- Evolution 3: Smart ones
                                                                                         elseif days >= smartShamblerDay and days < sprinterDay then
                                                                                             currentStage = 3
                                                                                             stageMessage = "Are they even stronger now? I swear some of these doors were closed..."
-                                                                                            applySettings(dayZeroPurge, math.max(1.0, maxPop * 0.75), evos[3].speed, evos[3].str, evos[3].tou, evos[3].cog, evos[3].hea, evos[3].sig, evos[3].mem, evos[3].lun, evos[3].dra, evos[3].dnn, evos[3].infect) -- Fast Shamblers, Superhuman, Tough, Open doors, Pinpoint hearing, Eagle hearing, Long memory, Can Lunge, Can Drag Down, Both Day and Night, Blood and Bite
+                                                                                            applySettings(dayZeroPurge, math.max(1.0, maxPop * 0.75), evos[3].speed, evos[3].str, evos[3].tou, evos[3].cog, evos[3].hea, evos[3].sig, evos[3].mem, evos[3].lun, evos[3].dra, evos[3].dnn, evos[3].infect, evos[3].spPct, evos[3].dpPct) -- Fast Shamblers, Superhuman, Tough, Open doors, Pinpoint hearing, Eagle hearing, Long memory, Can Lunge, Can Drag Down, Both Day and Night, Blood and Bite
                                                                                             print("[ZomboidEvolved] Evolution 3: Smartones, they can open doors now")
 
                                                                                             -- Evolution 4: Death
                                                                                             else
                                                                                                 currentStage = 4
                                                                                                 stageMessage = "is that infected running? IT'S RUNNING!!"
-                                                                                                applySettings(dayZeroPurge, maxPop, evos[4].speed, evos[4].str, evos[4].tou, evos[4].cog, evos[4].hea, evos[4].sig, evos[4].mem, evos[4].lun, evos[4].dra, evos[4].dnn, evos[4].infect) -- Sprinters, Superhuman, Tough, Open doors, Pinpoint hearing, Eagle hearing, Long memory, Can Lunge, Can Drag Down, Night, Blood and Bite
+                                                                                                applySettings(dayZeroPurge, maxPop, evos[4].speed, evos[4].str, evos[4].tou, evos[4].cog, evos[4].hea, evos[4].sig, evos[4].mem, evos[4].lun, evos[4].dra, evos[4].dnn, evos[4].infect, evos[4].spPct, evos[4].dpPct) -- Sprinters, Superhuman, Tough, Open doors, Pinpoint hearing, Eagle hearing, Long memory, Can Lunge, Can Drag Down, Night, Blood and Bite
                                                                                                 end
 
                                                                                                 -- Check if evolution has changed since last time
